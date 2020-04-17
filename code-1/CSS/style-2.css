@@ -1,0 +1,52 @@
+/* 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化 */
+/* float实现 */
+/* .con {
+    width: 100%;
+    height: 600px;
+}
+.leftbar {
+    width: 200px;
+    height: 100%;
+    float: left;
+    background-color: #CDC0B0;
+}
+.rightbar {
+    width: auto;
+    height: 100%;
+    background-color: #EEDFCC;
+} */
+
+/* 用position实现 */
+/* .con {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.leftbar {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    background-color: #CDC0B0;
+}
+.rightbar {
+    height: 100%;
+    margin-left: 200px;
+    background-color: #EEDFCC;
+} */
+
+/* 用flex实现 */
+.con {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.leftbar {
+    flex: 0 0 200px;
+    height: 100%;
+    background-color: #CDC0B0;
+}
+.rightbar {
+    flex: 1 1 auto;
+    height: 100%;
+    background-color: #EEDFCC;
+}

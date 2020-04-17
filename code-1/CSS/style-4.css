@@ -1,0 +1,87 @@
+/* 实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化 */
+/* float实现 */
+/* .con {
+    width: 100%;
+    height: 600px;
+}
+.leftbar {
+    width: 100px;
+    height: 100%;
+    float: left;
+    background-color: #CDC0B0;
+}
+.mainbar {
+    width: auto;
+    height: 100%;
+    margin: 0 100px;
+
+    background-color: antiquewhite;
+}
+.rightbar {
+    width: 100px;
+    height: 100%;
+    float: right;
+
+    background-color: #EEDFCC;
+} */
+/* 要先写两边再写中间 */
+
+/* position实现 HTML是左右中*/
+/* .con {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.leftbar {
+    width: 100px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #CDC0B0;
+}
+.mainbar {
+    width: auto;
+    height: 100%;
+    margin: 0 100px;
+
+    background-color: antiquewhite;
+}
+.rightbar {
+    width: 100px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: #EEDFCC;
+} */
+
+/* flex实现 */
+/* flex实现时HTML要按照左中右书写 */
+.con {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.leftbar {
+    width: 100px;
+    height: 100%;
+
+    background-color: #CDC0B0;
+}
+.mainbar {
+    flex: 1;
+    height: 100%;
+
+    background-color: antiquewhite;
+}
+.rightbar {
+    width: 100px;
+    height: 100%;
+
+    background-color: #EEDFCC;
+}

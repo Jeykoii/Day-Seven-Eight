@@ -1,0 +1,53 @@
+/* 两栏布局 （左30% 右70%）*/
+
+/*float实现 */
+/* .leftbar {
+  float: left;
+  width: 30%;
+  height: 600px;
+  background-color: #CDC0B0;
+}
+.rightbar {
+  float: right;
+  width: 70%;
+  height: 600px;
+  back
+  background-color: #EEDFCC;
+} */
+
+/* position 实现 */
+/* .con {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.leftbar {
+  position: absolute; 
+  width: 30%;
+  height: 100%;
+  background-color: #CDC0B0;
+
+}
+.rightbar {
+  margin-left: 30%;
+  width: 70%;
+  height: 100%;
+  background-color: #EEDFCC;
+} */
+
+/* flexbox实现 */
+.con {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+.leftbar {
+  flex: 30%;
+  height: 100%;
+  background-color: #CDC0B0;
+}
+.rightbar {
+  flex: 70%;
+  height: 100%;
+  background-color: #EEDFCC;
+}

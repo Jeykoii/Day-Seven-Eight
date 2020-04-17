@@ -1,0 +1,90 @@
+/* 实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化 */
+/* float实现 HTML左中右排序*/
+/* .con {
+    width: 100%;
+    height: 600px;
+}
+.leftbar {
+    width: 100px;
+    height: 100%;
+    float: left;
+    background-color: #CDC0B0;
+}
+.mainbar {
+    width: 100px;
+    height: 100%;
+    float: left;
+
+    background-color: antiquewhite;
+}
+.rightbar {
+    width: auto;
+    height: 100%;
+
+    background-color: #EEDFCC;
+} */
+
+/* position实现 */
+/* .con {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.leftbar {
+    width: 200px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #CDC0B0;
+
+}
+.mainbar {
+    width: 400px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 200px;
+
+    background-color: antiquewhite;
+}
+.rightbar {
+	width: calc(100% - 600px);	
+    height: 100%;
+
+    position: absolute;
+    margin-left: 600px;
+    background-color: #EEDFCC;
+} */
+
+/* flex实现 */
+.con {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.leftbar {
+    width: 200px;
+    height: 100%;
+    flex: 0 0 auto;
+
+    background-color: #CDC0B0;
+
+}
+.mainbar {
+    width: 400px;
+    height: 100%;
+    
+    flex: 0 0 auto;
+
+    background-color: antiquewhite;
+}
+.rightbar {
+    height: 100%;
+
+    flex: 1;
+    background-color: #EEDFCC;
+}
